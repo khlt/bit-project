@@ -2,15 +2,8 @@
 
 * {
     margin: 0;
-    padding: 0;
     font-family: sans-serif;
     font-size: 1em;
-    line-height: 1;
-}
-
-div {
-    margin: 0;
-    padding: 0;
 }
 
 a {
@@ -18,176 +11,377 @@ a {
     color: black;
 }
 
-/* 헤더 */
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9f7ec;
-    padding: 8px 12px;
-}
 
-.navbar-logo {
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
+/*------------회원가입-------------*/
 
-.navbar-logo a {
-    padding-left: 24px;
-}
-
-.navbar-menu {
-    display: flex;
-    list-style: none;
+.join_area {
+    width: 50%;
     margin: 0 auto;
 }
 
-.navbar-menu li {
-    padding: 8px 12px;
+.join_tit {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.navbar-menu li:hover {
-    background-color: rgb(240, 205, 154);
-    border-radius: 5px;
-}
-
-.navbar-icons {
-    list-style: none;
-    display: flex;
-    margin: 0 auto;
-}
-
-.navbar-icons li {
-    padding: 8px 12px;
-}
-
-/* 섹션 */
-.section_wrap {
-    width: 1200px;
-    height: 1000px;
-    margin: 0 auto;
-}
-
-.section-header h2 {
-    margin: 50px 200px 20px 20px;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.content {
-    display: grid;
-    background-color: #f9f7ec;
-    border-radius: 0.5em;
-    padding: 2em 2em 4em 2em;
-}
-
-.content label {
-    display: block;
-    padding: 0.5em;
-}
-
-.content input,
-span {
-    border: 1px solid #ced4da;
-    border-radius: 0.5em;
-    padding: 12px;
-    width: 20em;
-    font-size: 1rem;
-    border-color: #56af53;
-    box-shadow: 0 0 0 1pt grey;
-    outline: none;
-    border-radius: 5pt;
-}
-
-.content input:focus {
-    box-shadow: 0 0 5pt 5pt rgb(240, 205, 154);
-    transition: .1s;
-    border-radius: 5pt;
-    border: 0;
-
-}
-
-
-.form>.item.input2>div.span-box {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.form .item.input2 input {
-    border: 1px solid #56af53;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border-left: 0;
-}
-
-.form .item.input2 span {
-
+.join_tit h5 {
     font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    letter-spacing: 0px;
+    display: inline-block;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.join_info {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+
+
+.join_info input,
+textarea,
+fieldset input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+    line-height: normal;
+    /* line-height 초기화 */
+    border-radius: 0;
+    /* iSO 둥근모서리 제거 */
+    clear: both;
+    outline-style: none;
+    /* 포커스시 발생하는 효과 제거 */
+    -webkit-appearance: none;
+    /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.e_mail,
+.name01,
+.basic {
+    display: block;
+    position: relative;
+}
+
+.warn_area {
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    left: 0px;
+    border: 0px solid red;
+}
+
+.pw01,
+.pw02 {
+    display: inline-block;
+    width: 49%;
+}
+
+.pw02 {
+    float: right;
+}
+
+.birth01 {
+    display: block;
+    width: 49%;
+    float: left;
+}
+
+.gender01 {
+    display: inline-block;
+    width: 49%;
+    float: right;
+}
+
+.g_box {
+    display: inline-block;
+    margin-top: -4px;
+    width: 49%;
+}
+
+.gender01 input[type='radio'] {
     width: 14px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    -webkit-appearance: radio;
 }
 
-.stamp-container {
-    display: grid;
-    grid-template-columns: 6fr 4fr;
-
+.m_area {
+    display: inline-block;
+    width: 100%;
 }
 
-.content-item>form>.item {
-    margin: 20px 20px;
+.country_code {
+    display: inline-block;
+    width: 14%;
 }
 
-.form>.item:last-child {
+.country_code2 {
+    display: inline-block;
+    width: 22%;
+}
 
+.number01,
+.number02 {
+    display: inline-block;
+    width: 22%;
+    margin-left: 13px;
+    margin-right: 14px;
+}
+
+.number02 {
+    margin-right: 0px;
+    float: right;
+}
+
+.number03 {
+    display: inline-block;
+    width: 74%;
+    margin-left: 14px;
+}
+
+.add_area {
+    display: inline-block;
+    width: 100%;
+}
+
+.zip_code {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+}
+
+
+.address_btn {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    background-color: #78808c;
     text-align: center;
-    margin: 50px auto 0 auto;
+    font-size: 15px;
+    color: #fff;
+    line-height: 50px;
+    margin-left: -20%;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.form>.item:last-child input {
+.address_btn02 {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    background-color: #78808c;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    line-height: 50px;
+    margin-left: -20%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.address_btn:hover {
+    background-color: #08b2f5;
+}
+
+.address_btn02:hover {
+    background-color: #08b2f5;
+}
+
+.add_01 {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    float: right;
+}
+
+.add_02 {
+    display: block;
+    width: 100%;
+}
+
+.agree_box {
+    width: 100%;
+    height: auto;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+    padding: 16px;
+    position: relative;
+    display: inline-block;
+    background: #f3f3f3;
+    margin-top: 15px;
+}
+
+.join_agree {
+    width: 100%;
+    height: 30px;
+    line-height: 28px;
+    position: relative;
+    display: block;
+    border: 0px solid red;
+}
+
+.join_agree a {
+    position: relative;
+    display: inline-block;
+    border: 0px solid red;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #888;
+    border-bottom: 1px solid #aaa;
+    float: right;
+}
+
+.join_agree a:hover {
+    color: #08b2f5;
+    border-bottom: 1px solid #08b2f5;
+
+}
+
+.join_agree input[type='checkbox'] {
+    margin-left: 0px;
+    margin-right: 6px;
+    -webkit-appearance: checkbox;
+}
+
+.btn_join {
+    font-size: 15px;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #08b2f5;
+    margin: 0 auto;
+    margin-top: 30px;
     cursor: pointer;
 }
 
-/* 스탬프 */
-.coupon {
-    border: 2px solid #996916;
-    border-radius: 5pt;
-    background-color: rgb(245 239 216);
-    width: 240px;
+.btn_join:hover {
+    background-color: #008fe9;
 }
 
-.item.coupon {
-    grid-column: 2/4;
-}
+/*-------------가입완료------------*/
 
-.item.coupon {
+.btn_main {
+    font-size: 15px;
+    width: 160px;
+    height: 50px;
+    line-height: 48px;
     text-align: center;
-    width: 200px;
-    font-size: 20px;
+    color: #08b2f5;
+    border: 1px solid #08b2f5;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    cursor: pointer;
 }
 
-.item.coupon p {
-    /* width: 100%;
-    border: 2px solid #996916;
-    border-radius: 5pt; */
+.btn_main:hover {
+    color: #fff;
+    background-color: #08b2f5;
+}
+
+.sub_tit {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sub_tit h1 {
+    font-size: 33px;
+}
+
+.under {
+    width: 70px;
+    height: 6px;
+    background: #f9f7ec;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
     margin-top: 5px;
-    color: white;
-    background-color: rgb(111, 75, 38);
+    margin-bottom: 20px;
 }
 
-.item.coupon .coupon-first-row {
-    display: flex;
+.sub_wrap {
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    padding-top: 40px;
+    margin-bottom: 80px;
+    border: 0px solid red;
+
 }
 
-.item.coupon .coupon-second-row {
-    display: flex;
+.sub_wrap {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 50px 50px 50px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    border: 2px solid #f9f7ec;
 }
 
+
+.sub_bull {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 0%;
+    vertical-align: middle;
+}
+
+.sub_bull:before {
+    position: absolute;
+    display: block;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #08b2f5;
+    content: '';
+}
+
+.sub_bull:before {
+    top: 6px;
+}
+
+.sub_bull span {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 14px;
+    color: #333;
+    display: block;
+}
+
+.button_box {
+    text-align: center;
+    margin: 0 auto;
+}
 
 /* 버튼 */
 
