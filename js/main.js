@@ -141,7 +141,8 @@ window.addEventListener("scroll", function () {
 //로그인
 
 function doDisplay() {
-  var con = document.getElementById("myDIV");
+  let con = document.getElementById("myDIV");
+
   if (con.style.display == "none") {
     con.style.display = "block";
   } else {
